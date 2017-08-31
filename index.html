@@ -6,6 +6,9 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+      <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="highlight/style/solarized-light.css">
 </head>
 
 <body>
@@ -34,15 +37,234 @@
               In Sublime Text left navigation:
               <ul>
                 <li>Right click <strong>"New file"</strong>  with </li>
-                <li>Save it as <code>index.html</code></li>
-                <li></li>
+                <li>Save it as <code>index.html</code> with <strong> with </strong> <strong>Ctrl + S</strong></li>
+                <li>Do the same to create a <code>style.css</code> file</li>
+                <li>Then <strong>"New Folder"</strong>  and create an <code> and create an</code>  folder</li>
               </ul>
             </li>
+            <li>Finally double click on <code>index.html</code>  to open it with Chrome</li>
           </ol>
+          <img src="img/setup.png" width="100%">
+        </section>
+        <section class="readme-section">
+        <h2 class="readme-header">
+          2. Add some HTML content
+        </h2>
+        <ul>
+          <li>To save time, just right-click on the following images and save them in your <code>images</code> folder</li>
+          <ul class="list-inline">
+            <li><img src="img/briefcase.png" width="100" alt="briefcase"></li>
+            <li><img src="img/diamond.png" width="100" alt="diamond"></li>
+            <li><img src="img/heart.png" width="100" alt="heart"></li>
+            <li><img src="img/laptop.png" width="100" alt="laptop"></li>
+          </ul>
+          <li>Then start with this HTML code in <code>index.html</code></li>
+        </ul>
+        <pre class="highlight">
+         <code>
+&lt;html&gt;
+  &lt;head&gt;
+    <title>My playground landing</title>
+    <meta charset="utf-8">
+  &lt;/head&gt;
+  &lt;body&gt;
+    <h1>My playground app</h1>
+    <p>This is the important line everyone reads..</p>
+    <p>
+      <a href="#">Start now</a>
+    </p>
+
+    <img src="images/briefcase.png" alt="picture description" width="100">
+    <h2>Fast</h2>
+    <p>A fast app, <strong>very fast</strong> app</p>
+
+    <img src="images/diamond.png" alt="picture description" width="100">
+    <h2>Simple</h2>
+    <p>A simple app, <strong>very simple</strong> app</p>
+
+    <img src="images/heart.png" alt="picture description" width="100">
+    <h2>Awesome</h2>
+    <p>An awesome app, <strong>very awesome</strong> app</p>
+
+    <img src="images/laptop.png" alt="picture description" width="100">
+    <h2>Beautiful</h2>
+    <p>A beautiful app, <strong>very beautiful</strong> app</p>
+
+    <p>This is a playground landing ©Benatna</p>
+  &lt;/body&gt;
+&lt;/html&gt;
+         </code>
+        </pre>
+        <h3>Extra - find nice personal icons</h3>
+        <ul>
+          <li>You can pick your icons on <a href="https://iconstore.co/" target="_blank">IconStore</a>, <a href="https://thenounproject.com/" target="_blank">The Noun Project</a>, <a href="https://nucleoapp.com/premium-icons/" target="_blank">NucleoApp</a> (they have a free pack).</li>
+          <li><strong>Tips</strong>: Also stay tuned checking <a href="https://www.producthunt.com/search?q=icons" target="_blank">icon resources on Product Hunt</a></li>
+        </ul>
+        </section>
+        <section class="readme-section">
+          <h2 class="readme-header">3. CSS for fonts & colors</h2>
+          <p>
+            Link your stylesheet <code>Link your stylesheet </code> in the <code>head</code>  section of your HTML
+          </p>
+          <pre class="highlight html">
+            <code>
+  <head>
+    <link href='style.css' rel='stylesheet'>
+  </head>
+            </code>
+          </pre>
+          <p>
+            Then copy/paste the CSS code below in <code>style.css</code> and <strong>fix it</strong>  cause it's ugly
+          </p>
+          <ul>
+            <li>For fonts use <a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+            <li>For colors use <a href="http://www.colorzilla.com/chrome/" target="_blank">Colorzilla Chrome plugin</a>  to pick colors from other websites</li>
+            <li>You can also find nice colors on <a href="https://coolors.co/" target="_blank">Coolors</a> or <a href="http://colorhunt.co/" target="_blank">Color Hunt</a></li>
+          </ul>
+          <pre class="highlight">
+            <code>
+/* style.css */
+body{
+  background: rgb(245,245,245);
+  color: green;
+  font-size: 25px;
+  font-family: Helvetica;
+}
+h1{
+  font-family: Courier;
+  color: red;
+  font-weight: lighter;
+  font-size: 10px;
+}
+h2 {
+  font-family: Courier;
+  color: pink;
+  font-weight: lighter;
+  font-size: 8px;
+}
+a {
+  color: yellow;
+}
+a:hover {
+  text-decoration: none;
+  color: purple;
+}
+            </code>
+          </pre>
+        </section>
+        <section class="readme-section">
+          <h2 class="readme-header">
+            4. Wrap with
+          </h2>
+          <p>
+            Wrap different sections in different <code>div</code>
+          </p>
+          <pre class="highlight">
+            <code>
+<div>
+  <h1>My playground app</h1>
+  <p>This is the important line everyone reads..</p>
+</div>
+
+<div>
+  <img src="images/briefcase.png" alt="picture description" width="100">
+  <h2>Fast</h2>
+  <p>A fast app, <strong>very fast</strong> app</p>
+</div>
+
+<div>
+  <img src="images/diamond.png" alt="picture description" width="100">
+  <h2>Simple</h2>
+  <p>A simple app, <strong>very simple</strong> app</p>
+</div>
+
+<div>
+  <img src="images/heart.png" alt="picture description" width="100">
+  <h2>Awesome</h2>
+  <p>An awesome app, <strong>very awesome</strong> app</p>
+</div>
+
+<div>
+  <img src="images/laptop.png" alt="picture description" width="100">
+  <h2>Beautiful</h2>
+  <p>A beautiful app, <strong>very beautiful</strong> app</p>
+</div>
+
+<div>
+  <p>This is a playground landing ©Le Wagon</p>
+</div>
+            </code>
+          </pre>
+        </section>
+        <section class="readme-section">
+          <h2 class="readme-header">
+            5. Name your tags
+          </h2>
+          <ul>
+            <li>Name your banner and footer with <code>id</code> like <code>&lt;div id="banner"&gt;</code> and <code>&lt;div id="footer"&gt;</code></li>
+            <li>Name your features with <code>class</code> like <code>&lt;div class="card"&gt;</code></li>
+            <li>Then add this nice CSS code</li>
+          </ul>
+          <pre class="highlight">
+            <code>
+#banner{
+  text-align: center;
+  background-image: url("https://unsplash.it/1300/600?random");
+  background-size: cover;
+  padding: 150px;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+#banner h1 {
+  color: white;
+  font-size: 50px;
+}
+#banner p {
+  color: white;
+  opacity: 0.8;
+  font-size: 30px;
+  font-weight: lighter;
+}
+#footer{
+  padding: 30px;
+  background: rgb(30, 30, 30);
+  color: lightgrey;
+}
+.card{
+  padding: 50px;
+  font-weight: lighter;
+}
+            </code>
+          </pre>
+          <h3>Extra - find a cool background image</h3>
+          <ul>
+            <li>You can pick your background picture on <a href="https://www.pexels.com/" target="_blank">Pexels</a></li>
+          </ul>
         </section>
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  { src: 'highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+</script>
+
+
 
 </body>
 </html>
