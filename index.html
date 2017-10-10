@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <!-- Theme used for syntax highlighting of code -->
-  <link rel="stylesheet" href="./js/highlight/styles/default.css " >
+  <link rel="stylesheet" href="./js/highlight/styles/rainbow.css " >
   <script src="./js/highlight/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 
@@ -67,35 +67,35 @@
           <pre class="hljs">
            <code class="html">
             &lt;html&gt;
-            &lt;head&gt;
-            &lt;title&gt;My playground landing&lt;/title&gt;
-            &lt;meta charset="utf-8"&gt;
-            &lt;/head&gt;
-            &lt;body&gt;
-            &lt;h1&gt;My playground app&lt;/h1&gt;
-            &lt;p&gt; This is the important line everyone reads...&lt;/p&gt;
-            &lt;p&gt;
-            &lt;a href="#"&gt;Start now&lt;/a&gt;
-            &lt;/p&gt;
+              &lt;head&gt;
+                &lt;title&gt;My playground landing&lt;/title&gt;
+                &lt;meta charset="utf-8"&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+                &lt;h1&gt;My playground app&lt;/h1&gt;
+                &lt;p&gt; This is the important line everyone reads...&lt;/p&gt;
+                &lt;p&gt;
+                  &lt;a href="#"&gt;Start now&lt;/a&gt;
+                &lt;/p&gt;
 
-            &lt;img src="images/briefcase.png" alt="picture description" width="100"&gt;
-            &lt;h2&gt;Fast&lt;/h2&gt;
-            &lt;p&gt;A fast app, &lt;strong&gt;very fast&lt;/strong&gt; app&lt;/p&gt;
+                &lt;img src="images/briefcase.png" alt="picture description" width="100"&gt;
+                &lt;h2&gt;Fast&lt;/h2&gt;
+                &lt;p&gt;A fast app, &lt;strong&gt;very fast&lt;/strong&gt; app&lt;/p&gt;
 
-            &lt;img src="images/diamond.png" alt="picture description" width="100"&gt;
-            &lt;h2&gt;Simple&lt;/h2&gt;
-            &lt;p&gt;A simple app, &lt;strong&gt;very simple&lt;/strong&gt; app&lt;/p&gt;
+                &lt;img src="images/diamond.png" alt="picture description" width="100"&gt;
+                &lt;h2&gt;Simple&lt;/h2&gt;
+                &lt;p&gt;A simple app, &lt;strong&gt;very simple&lt;/strong&gt; app&lt;/p&gt;
 
-            &lt;img src="images/heart.png" alt="picture description" width="100"&gt;
-            &lt;h2&gt;Awesome&lt;/h2&gt;
-            &lt;p&gt;An awesome app, &lt;strong&gt;very awesome&lt;/strong&gt; app&lt;/p&gt;
+                &lt;img src="images/heart.png" alt="picture description" width="100"&gt;
+                &lt;h2&gt;Awesome&lt;/h2&gt;
+                &lt;p&gt;An awesome app, &lt;strong&gt;very awesome&lt;/strong&gt; app&lt;/p&gt;
 
-            &lt;img src="images/laptop.png" alt="picture description" width="100"&gt;
-            &lt;h2&gt;Beautiful&lt;/h2&gt;
-            &lt;p&gt;A beautiful app, &lt;strong&gt;very beautiful&lt;/strong&gt; app&lt;/p&gt;
+                &lt;img src="images/laptop.png" alt="picture description" width="100"&gt;
+                &lt;h2&gt;Beautiful&lt;/h2&gt;
+                &lt;p&gt;A beautiful app, &lt;strong&gt;very beautiful&lt;/strong&gt; app&lt;/p&gt;
 
-            &lt;p&gt;This is a playground landing ©Benatna&lt;/p&gt;
-            &lt;/body&gt;
+                &lt;p&gt;This is a playground landing ©Benatna&lt;/p&gt;
+              &lt;/body&gt;
             &lt;/html&gt;
           </code>
         </pre>
@@ -111,10 +111,10 @@
           Link your stylesheet <code>Link your stylesheet </code> in the <code>head</code> section of your HTML
         </p>
         <pre class="hljs">
-          <code>
-            <head>
-              <link href='style.css' rel='stylesheet'>
-            </head>
+          <code class="html">
+&lt;head&gt;
+  &lt;link href='style.css' rel='stylesheet'&gt;
+&lt;/head&gt;
           </code>
         </pre>
         <p>
@@ -127,212 +127,217 @@
         </ul>
         <pre class="hljs">
           <code>
-            /* style.css */
-            body{
-            background: rgb(245,245,245);
-            color: green;
-            font-size: 25px;
-            font-family: Helvetica;
-          }
-          h1{
-          font-family: Courier;
-          color: red;
-          font-weight: lighter;
-          font-size: 10px;
-        }
-        h2 {
-        font-family: Courier;
-        color: pink;
-        font-weight: lighter;
-        font-size: 8px;
-      }
-      a {
-      color: yellow;
-    }
-    a:hover {
-    text-decoration: none;
-    color: purple;
-  }
-</code>
-</pre>
-</section>
-<section class="readme-section">
-  <h2 class="readme-header">
-    4. Wrap with
-  </h2>
-  <p>
-    Wrap different sections in different <code>div</code>
-  </p>
-  <pre class="hljs">
-    <code>
-      <div>
-        <h1>My playground app</h1>
-        <p>This is the important line everyone reads..</p>
-      </div>
+/* style.css */
+body{
+  background: rgb(245,245,245);
+  color: green;
+  font-size: 25px;
+  font-family: Helvetica;
+}
 
-      <div>
-        <img src="images/briefcase.png" alt="picture description" width="100">
-        <h2>Fast</h2>
-        <p>A fast app, <strong>very fast</strong> app</p>
-      </div>
+h1{
+  font-family: Courier;
+  color: red;
+  font-weight: lighter;
+  font-size: 10px;
+}
 
-      <div>
-        <img src="images/diamond.png" alt="picture description" width="100">
-        <h2>Simple</h2>
-        <p>A simple app, <strong>very simple</strong> app</p>
-      </div>
+h2 {
+  font-family: Courier;
+  color: pink;
+  font-weight: lighter;
+  font-size: 8px;
+}
 
-      <div>
-        <img src="images/heart.png" alt="picture description" width="100">
-        <h2>Awesome</h2>
-        <p>An awesome app, <strong>very awesome</strong> app</p>
-      </div>
+a {
+  color: yellow;
+}
 
-      <div>
-        <img src="images/laptop.png" alt="picture description" width="100">
-        <h2>Beautiful</h2>
-        <p>A beautiful app, <strong>very beautiful</strong> app</p>
-      </div>
+a:hover {
+  text-decoration: none;
+  color: purple;
+}
 
-      <div>
-        <p>This is a playground landing ©Le Wagon</p>
-      </div>
-    </code>
-  </pre>
-</section>
-<section class="readme-section">
-  <h2 class="readme-header">
-    5. Name your tags
-  </h2>
-  <ul>
-    <li>Name your banner and footer with <code>id</code> like <code>&lt;div id="banner"&gt;</code> and <code>&lt;div id="footer"&gt;</code></li>
-    <li>Name your features with <code>class</code> like <code>&lt;div class="card"&gt;</code></li>
-    <li>Then add this nice CSS code</li>
-  </ul>
-  <pre class="hljs">
-    <code class="css">
-      #banner{
-      text-align: center;
-      background-image: url("https://unsplash.it/1300/600?random");
-      background-size: cover;
-      padding: 150px;
-      color: white;
-      text-shadow: 1px 1px 5px black;
-    }
-    #banner h1 {
-    color: white;
-    font-size: 50px;
-  }
-  #banner p {
+          </code>
+        </pre>
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">4. Wrap with</h2>
+        <p>
+          Wrap different sections in different <code>div</code>
+        </p>
+        <pre class="hljs">
+          <code>
+      &lt;div&gt;
+        &lt;h1&gt;My playground app&lt;/h1&gt;
+        &lt;p&gt;This is the important line everyone reads..&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div&gt;
+        &lt;img src="images/briefcase.png" alt="picture description" width="100"&gt;
+        &lt;h2&gt;Fast&lt;/h2&gt;
+        &lt;p&gt;A fast app, &lt;strong&gt;very fast&lt;/strong&gt; app&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div&gt;
+        &lt;img src="images/diamond.png" alt="picture description" width="100"&gt;
+        &lt;h2&gt;Simple&lt;/h2&gt;
+        &lt;p&gt;A simple app, &lt;strong&gt;very simple&lt;/strong&gt; app&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div&gt;
+        &lt;img src="images/heart.png" alt="picture description" width="100"&gt;
+        &lt;h2&gt;Awesome&lt;/h2&gt;
+        &lt;p&gt;An awesome app, &lt;strong&gt;very awesome&lt;/strong&gt; app&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div&gt;
+        &lt;img src="images/laptop.png" alt="picture description" width="100"&gt;
+        &lt;h2&gt;Beautiful&lt;/h2&gt;
+        &lt;p&gt;A beautiful app, &lt;strong&gt;very beautiful&lt;/strong&gt; app&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div&gt;
+        &lt;p&gt;This is a playground landing ©Benatna&lt;/p&gt;
+      &lt;/div&gt;
+          </code>
+        </pre>
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">5. Name your tags</h2>
+        <ul>
+          <li>Name your banner and footer with <code>id</code> like <code>&lt;div id="banner"&gt;</code> and <code>&lt;div id="footer"&gt;</code></li>
+          <li>Name your features with <code>class</code> like <code>&lt;div class="card"&gt;</code></li>
+          <li>Then add this nice CSS code</li>
+        </ul>
+        <pre class="hljs">
+          <code class="css">
+#banner {
+  text-align: center;
+  background-image: url("https://unsplash.it/1300/600?random");
+  background-size: cover;
+  padding: 150px;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+
+#banner h1 {
+  color: white;
+  font-size: 50px;
+}
+
+#banner p {
   color: white;
   opacity: 0.8;
   font-size: 30px;
   font-weight: lighter;
 }
-#footer{
-padding: 30px;
-background: rgb(30, 30, 30);
-color: lightgrey;
+
+#footer {
+  padding: 30px;
+  background: rgb(30, 30, 30);
+  color: lightgrey;
 }
-.card{
-padding: 50px;
-font-weight: lighter;
+
+.card {
+  padding: 50px;
+  font-weight: lighter;
 }
-</code>
-</pre>
-<h3>Extra - find a cool background image</h3>
-<ul>
-  <li>You can pick your background picture on <a href="https://www.pexels.com/" target="_blank">Pexels</a></li>
-</ul>
-</section>
-<section class="readme-section">
-  <h2 class="readme-header">
-    6. Fontawesome
-  </h2>
-  <p>
-    In your <code>head</code>, it's in your <code>head</code>!
-  </p>
-  <pre class="hljs">
-    <code class="html">
-      <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-      </head>
-    </code>
-  </pre>
-  <p>And then in the footer</p>
-  <pre class="hljs">
-    <code class="html">
-      <ul>
-        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-      </ul>
-    </code>
-  </pre>
-  <p>With a bit of CSS style</p>
-  <pre class="hljs">
-    <code class="css">
-      #footer a {
-      color: lightgrey;
-      font-size: 15px;
-    }
-    #footer a:hover {
-    color: white;
-  }
-</code>
-</pre>
-</section>
-<section class="readme-section">
-  <h2 class="readme-header">
-    7. Bootstrap setup
-  </h2>
-  <p>
-    Link Bootstrap stylesheet in the <code>head</code> section of your HTML <strong>before your stylesheet link</strong>
-  </p>
-  <pre class="hljs">
-    <code class="html">
-      <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link href='style.css' rel='stylesheet'>
-      </head>
-    </code>
-  </pre>
-  <p>Play with <code>class="btn btn-primary"</code> and <code>class="list-inline"</code>, your first Bootstrap classes</p>
-</section>
-<section class="readme-section">
-  <h2 class="readme-header">
-    8. Bootstrap grid
-  </h2>
-  <ul>
-    <li>Inject your 4 cards div in the following responsive grid</li>
-  </ul>
-  <pre class="hljs">
-    <code class="html">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <!-- div class="card" -->
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-3">
-      <!-- div class="card" -
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <!-- div class="card" -->
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <!-- div class="card" -->
+
+          </code>
+        </pre>
+        <h3>Extra - find a cool background image</h3>
+        <ul>
+          <li>You can pick your background picture on <a href="https://www.pexels.com/" target="_blank">Pexels</a></li>
+        </ul>
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">6. Fontawesome</h2>
+        <p>
+        In your <code>head</code>, it's in your <code>head</code>!
+        </p>
+        <pre class="hljs">
+          <code class="html">
+&lt;head&gt;
+  &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"&gt;
+&lt;/head&gt;
+          </code>
+        </pre>
+        <p>And then in the footer</p>
+        <pre class="hljs">
+          <code class="html">
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-youtube">&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-facebook">&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-twitter">&lt;/i&gt;&lt;/a&gt;&lt;/li>&gt;
+  &lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-github">&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+          </code>
+        </pre>
+        <p>With a bit of CSS style</p>
+        <pre class="hljs">
+          <code class="css">
+#footer a {
+  color: lightgrey;
+  font-size: 15px;
+}
+
+#footer a:hover {
+  color: white;
+}
+          </code>
+        </pre>
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">7. Bootstrap setup</h2>
+        <p>
+          Link Bootstrap stylesheet in the <code>head</code> section of your HTML <strong>before your stylesheet link</strong>
+        </p>
+        <pre class="hljs">
+          <code class="html">
+&lt;head&gt;
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"&gt;
+  &lt;link href='style.css' rel='stylesheet'&gt;
+&lt;/head&gt;
+          </code>
+        </pre>
+        <p>Play with <code>class="btn btn-primary"</code> and <code>class="list-inline"</code>, your first Bootstrap classes</p>
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">8. Bootstrap grid</h2>
+        <ul>
+          <li>Inject your 4 cards div in the following responsive grid</li>
+        </ul>
+        <pre class="hljs">
+          <code class="html">
+&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-xs-12 col-sm-6 col-md-3"&gt;
+      &lt;!-- div class="card" --&gt;
+    &lt;/div&gt;
+
+    &lt;div class="col-xs-12 col-sm-6 col-md-3"&gt;
+      &lt;!-- div class="card" --&gt;
+    &lt;/div&gt;
+
+    &lt;div class="col-xs-12 col-sm-6 col-md-3"&gt;
+      &lt;!-- div class="card" --&gt;
+    &lt;/div&gt;
+
+    &lt;div class="col-xs-12 col-sm-6 col-md-3"&gt;
+      &lt;!-- div class="card" --&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+          </code>
+        </pre>
+      </section>
     </div>
   </div>
-</div>
-</code>
-</pre>
-</section>
-</div>
-</div>
-</div>
+  </div>
 
 
 
